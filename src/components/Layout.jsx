@@ -1,15 +1,20 @@
+import { useState } from "react";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 
 export default function Layout({ children }) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen bg-gray-100">
-      <Sidebar />
+    <div className="flex pt-20">
+      {/* Sidebar recebe open e setOpen */}
+      <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
 
       <div className="flex-1 flex flex-col">
-        <Header />
+        {/* Header recebe a função setSidebarOpen */}
+        <Header setSidebarOpen={setSidebarOpen} />
 
-        <main className="p-4 space-y-4">
+        <main className="p-4 pt-20 space-y-4">
           {children}
         </main>
       </div>
