@@ -12,7 +12,7 @@ export default function Sidebar({ open, setOpen }) {
       >
         {/* Logo */}
         <div className="p-6 border-gray-400">
-          <h1 className="text-2xl font-semibold tracking-tight">Dashboard</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">Sistema</h1>
         </div>
 
         {/* Menu */}
@@ -24,17 +24,27 @@ export default function Sidebar({ open, setOpen }) {
 
           <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
             <BiCategory className="text-xl" />
-            Serviços
+            Projetos
           </a>
 
           <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
             <AiOutlineCalendar className="text-xl" />
-            Agenda
+            Clientes
           </a>
 
           <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
             <AiOutlineUser className="text-xl" />
-            Clientes
+            Fila de edição
+          </a>
+
+          <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
+            <AiOutlineUser className="text-xl" />
+            Entrada
+          </a>
+
+          <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
+            <AiOutlineUser className="text-xl" />
+            Saídas
           </a>
         </nav>
 
@@ -52,7 +62,7 @@ export default function Sidebar({ open, setOpen }) {
       {/* --- SIDEBAR DESKTOP --- */}
       <aside className="hidden md:flex w-64 h-screen bg-white shadow-sm border-r border-gray-400 rounded-xl flex-col">
         <div className="p-6 border-gray-400">
-          <h1 className="text-2xl font-semibold tracking-tight">Dashboard</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">Sistema</h1>
         </div>
 
         <nav className="flex-1 p-4 space-y-2">
@@ -68,12 +78,22 @@ export default function Sidebar({ open, setOpen }) {
 
           <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
             <AiOutlineCalendar className="text-xl" />
-            Agenda
+            Clientes
           </a>
 
           <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
             <AiOutlineUser className="text-xl" />
-            Clientes
+            Fila de edição
+          </a>
+
+          <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
+            <AiOutlineUser className="text-xl" />
+            Entradas
+          </a>
+
+          <a className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-800 hover:text-white text-gray-700 font-medium transition">
+            <AiOutlineUser className="text-xl" />
+            Saídas
           </a>
         </nav>
 

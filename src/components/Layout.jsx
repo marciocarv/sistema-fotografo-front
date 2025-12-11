@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="flex pt-20">
+    <div className="flex pt-10">
       {/* Sidebar recebe open e setOpen */}
       <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
 
